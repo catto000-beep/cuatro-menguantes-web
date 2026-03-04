@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 100%;
+    --radius: 0.5rem;
+    
+    /* Colores del logo Cuatro Menguantes */
+    --color-turquesa: #4ECDC4;
+    --color-rojo: #E63946;
+    --color-amarillo: #FFD93D;
+    --color-violeta: #6B5B95;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+/* Animaciones personalizadas */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes slide-up {
+  from { 
+    opacity: 0; 
+    transform: translateY(60px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scale-in {
+  from { 
+    opacity: 0; 
+    transform: scale(0.9); 
+  }
+  to { 
+    opacity: 1; 
+    transform: scale(1); 
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.6s ease-out forwards;
+}
+
+/* Gradientes de los colores del logo */
+.gradient-turquesa {
+  background: linear-gradient(135deg, var(--color-turquesa), #3DBBB4);
+}
+
+.gradient-rojo {
+  background: linear-gradient(135deg, var(--color-rojo), #C62828);
+}
+
+.gradient-amarillo {
+  background: linear-gradient(135deg, var(--color-amarillo), #F9C846);
+}
+
+.gradient-violeta {
+  background: linear-gradient(135deg, var(--color-violeta), #5A4A84);
+}
+
+/* Glow effects */
+.glow-turquesa {
+  box-shadow: 0 0 40px rgba(78, 205, 196, 0.4);
+}
+
+.glow-rojo {
+  box-shadow: 0 0 40px rgba(230, 57, 70, 0.4);
+}
+
+.glow-amarillo {
+  box-shadow: 0 0 40px rgba(255, 217, 61, 0.4);
+}
+
+.glow-violeta {
+  box-shadow: 0 0 40px rgba(107, 91, 149, 0.4);
+}
+
+/* Text gradients */
+.text-gradient-turquesa {
+  background: linear-gradient(135deg, var(--color-turquesa), #3DBBB4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-rojo {
+  background: linear-gradient(135deg, var(--color-rojo), #C62828);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-amarillo {
+  background: linear-gradient(135deg, var(--color-amarillo), #F9C846);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-violeta {
+  background: linear-gradient(135deg, var(--color-violeta), #5A4A84);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: var(--color-turquesa);
+  color: #000;
+}
+
+/* Forzar visibilidad de tarjetas */
+.repertorio-card,
+.video-card {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.repertorio-grid,
+.videos-grid {
+  display: grid !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
