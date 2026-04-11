@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { 
   Youtube, 
   Phone, 
@@ -7,9 +7,7 @@ import {
   MapPin,
   ChevronDown,
   Play,
-  ExternalLink,
-  X,
-  Image as ImageIcon
+  ExternalLink
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -19,8 +17,6 @@ function App() {
   const repertorioRef = useRef<HTMLDivElement>(null);
   const videosRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
-  
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
