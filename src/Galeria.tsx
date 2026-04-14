@@ -15,12 +15,12 @@ function Galeria() {
     'images/galeria/058A5368.jpg',
     'images/galeria/058A5372.jpg',
     'images/galeria/058A5374.jpg',
-    'images/galeria/058A5384.jpg',
-    'images/galeria/058A5391__1_.jpg',
+    'images/galeria/058A5384 (1).jpg',
+    'images/galeria/058A5391 (1).jpg',
     'images/galeria/058A5401.jpg',
-    'images/galeria/058A5407__1_.jpg',
+    'images/galeria/058A5407 (1).jpg',
     'images/galeria/058A5420.jpg',
-    'images/galeria/058A5422__1_.jpg',
+    'images/galeria/058A5422 (1).jpg',
   ];
 
   return (
