@@ -5,7 +5,7 @@ function Galeria() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   
   const galeriaImages = [
-    '/images/galeria/0C9A5569.jpg',
+    '/logo.png',
     '/images/galeria/0C9A5570.jpg',
     '/images/galeria/058A5361.jpg',
     '/images/galeria/058A5362.jpg',
