@@ -1,4 +1,5 @@
 {
+  "buildCommand": "npm install -g vite && vite build",
   "rewrites": [
     {
       "source": "/(.*)",
