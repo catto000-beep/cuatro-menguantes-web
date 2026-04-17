@@ -465,18 +465,13 @@ function App() {
 
             {/* Instagram Logo - Enlace */}
             <div className="md:col-span-1 flex flex-col items-center justify-center gap-6">
-              <a 
-                href="https://www.instagram.com/cuatromenguantes/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex flex-col items-center justify-center gap-4 p-8 rounded-2xl bg-gradient-to-r from-[#E63946]/10 to-[#ff4d5a]/10 border-2 border-[#E63946] hover:border-[#ff4d5a] hover:shadow-2xl hover:shadow-[#E63946]/50 transition-all transform hover:scale-105"
-              >
-                <span style={{ fontSize: '48px' }}>👆</span>
+              <div className="inline-flex flex-col items-center justify-center gap-4 p-8 rounded-2xl bg-gradient-to-r from-[#E63946]/10 to-[#ff4d5a]/10 border-2 border-[#E63946]">
+                <span style={{ fontSize: '48px' }}>👈</span>
                 <p className="text-center">
                   <span className="font-bold text-white block text-lg">HAZ CLICK</span>
                   <span className="text-white/70">EN LA IMAGEN</span>
                 </p>
-              </a>
+              </div>
               <p className="text-white/70 text-center">
                 <span className="font-bold text-white">@cuatromenguantes</span>
                 <br />
