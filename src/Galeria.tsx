@@ -5,8 +5,6 @@ function Galeria() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   
   const galeriaImages = [
-    '/logo.png',
-    '/images/galeria/0C9A5570.jpg',
     '/images/galeria/058A5361.jpg',
     '/images/galeria/058A5362.jpg',
     '/images/galeria/058A5364.jpg',
@@ -16,11 +14,14 @@ function Galeria() {
     '/images/galeria/058A5372.jpg',
     '/images/galeria/058A5374.jpg',
     '/images/galeria/058A5384 (1).jpg',
-    '/images/galeria/058A5391 (1).jpg',
+    '/images/galeria/058A5391.jpg',
     '/images/galeria/058A5401.jpg',
-    '/images/galeria/058A5407 (1).jpg',
-    '/images/galeria/058A5420.jpg',
-    '/images/galeria/058A5422 (1).jpg',
+    '/images/galeria/058A5422.jpg',
+    '/images/galeria/0C9A5566.jpg',
+    '/images/galeria/0C9A5569.jpg',
+    '/images/galeria/1.jpg',
+    '/images/galeria/10.jpg',
+    '/images/galeria/2.jpg',
   ];
 
   return (
