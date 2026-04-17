@@ -193,6 +193,17 @@ function App() {
                   </div>
                 </div>
               </div>
+
+              <div className="mt-12">
+                <a 
+                  href="/presentacion.pdf"
+                  download
+                  className="inline-flex items-center gap-3 bg-gradient-to-r from-[#4ECDC4] to-[#3DBBB4] text-black font-bold py-3 px-8 rounded-lg hover:shadow-lg hover:shadow-[#4ECDC4]/50 transition-all transform hover:scale-105"
+                >
+                  <span>📄</span>
+                  <span>Descargar Presentación</span>
+                </a>
+              </div>
             </div>
             
             <div className="relative">
