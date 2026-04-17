@@ -427,6 +427,81 @@ function App() {
         </div>
       </section>
 
+      {/* Instagram Section */}
+      <section className="py-24 px-4 relative bg-gradient-to-b from-[#0a0a0a] to-black">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <div className="w-12 h-1 gradient-rojo rounded-full" />
+              <span className="text-[#E63946] font-semibold uppercase tracking-wider text-sm">Síguenos</span>
+              <div className="w-12 h-1 gradient-rojo rounded-full" />
+            </div>
+            
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Instagram <span className="text-gradient-rojo">Cuatro Menguantes</span>
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-12 items-center max-w-5xl mx-auto">
+            {/* Foto de la banda - Enlace a Instagram */}
+            <div className="md:col-span-1">
+              <a 
+                href="https://www.instagram.com/cuatromenguantes/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block relative group"
+              >
+                <div className="absolute -inset-1 bg-gradient-to-r from-[#E63946] to-[#ff4d5a] rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200" />
+                <img 
+                  src="/images/banda-color.jpg"
+                  alt="Cuatro Menguantes en Instagram"
+                  className="relative rounded-2xl w-full shadow-2xl group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-black/30 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span style={{ fontSize: '60px' }}>📸</span>
+                </div>
+              </a>
+            </div>
+
+            {/* Instagram Logo - Enlace */}
+            <div className="md:col-span-1 flex flex-col items-center justify-center gap-6">
+              <a 
+                href="https://www.instagram.com/cuatromenguantes/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-32 h-32 rounded-full bg-gradient-to-r from-[#E63946] to-[#ff4d5a] hover:shadow-2xl hover:shadow-[#E63946]/50 transition-all transform hover:scale-110"
+              >
+                <span style={{ fontSize: '80px' }}>📱</span>
+              </a>
+              <p className="text-white/70 text-center">
+                <span className="font-bold text-white">@cuatromenguantes</span>
+                <br />
+                Síguenos en Instagram
+              </p>
+            </div>
+
+            {/* QR Code */}
+            <div className="md:col-span-1 flex flex-col items-center justify-center gap-6">
+              <a 
+                href="https://www.instagram.com/cuatromenguantes/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block p-4 rounded-2xl bg-white"
+              >
+                <img 
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.instagram.com/cuatromenguantes/"
+                  alt="QR Code - Instagram Cuatro Menguantes"
+                  className="w-48 h-48"
+                />
+              </a>
+              <p className="text-white/70 text-center text-sm">
+                Escanea el código<br />para ir a Instagram
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="py-12 px-4 border-t border-white/10">
         <div className="max-w-7xl mx-auto">
