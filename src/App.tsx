@@ -332,7 +332,7 @@ function App() {
             >
               <div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%' }}>
                 <img 
-                  src="https://img.youtube.com/vi/ZoMIqd4m5-M/maxresdefault.jpg"
+                  src="https://img.youtube.com/vi/ZoMIqd4m5-M/hqdefault.jpg"
                   alt="Mujer, Niña y Amiga"
                   style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
                 />
