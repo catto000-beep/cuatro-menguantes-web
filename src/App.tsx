@@ -295,18 +295,21 @@ function App() {
               href="https://www.youtube.com/watch?v=qpqh4DTSXd0"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ textDecoration: 'none' }}
+              style={{ textDecoration: 'none', position: 'relative', display: 'block', borderRadius: '20px', overflow: 'hidden', border: '4px solid #E63946' }}
             >
-              <div className="video-card" style={{ backgroundColor: '#52525b', border: '4px solid #E63946', borderRadius: '20px', padding: '40px', textAlign: 'center', minHeight: '300px', display: 'block', visibility: 'visible', opacity: 1 }}>
-                <div style={{ backgroundColor: '#E63946', width: '90px', height: '90px', borderRadius: '50%', margin: '0 auto 24px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <span style={{ fontSize: '45px', marginLeft: '5px' }}>▶️</span>
+              <div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%' }}>
+                <img 
+                  src="https://img.youtube.com/vi/qpqh4DTSXd0/maxresdefault.jpg"
+                  alt="No Estar Atado a Vos"
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+                <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', backgroundColor: '#E63946', width: '80px', height: '80px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <span style={{ fontSize: '40px', marginLeft: '5px' }}>▶️</span>
                 </div>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', marginBottom: '16px' }}>
-                  <span style={{ fontSize: '20px' }}>📺</span>
-                  <span style={{ fontSize: '14px', color: '#d4d4d8' }}>YouTube</span>
-                </div>
-                <h3 style={{ fontSize: '24px', fontWeight: 'bold', color: '#ffffff', marginBottom: '8px' }}>No Estar Atado a Vos</h3>
-                <p style={{ fontSize: '16px', color: '#a1a1aa' }}>Cuatro Menguantes</p>
+              </div>
+              <div style={{ backgroundColor: '#52525b', padding: '24px', textAlign: 'center' }}>
+                <h3 style={{ fontSize: '20px', fontWeight: 'bold', color: '#ffffff', marginBottom: '8px' }}>No Estar Atado a Vos</h3>
+                <p style={{ fontSize: '14px', color: '#a1a1aa' }}>Cuatro Menguantes</p>
               </div>
             </a>
 
@@ -314,18 +317,21 @@ function App() {
               href="https://www.youtube.com/watch?v=ZoMIqd4m5-M"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ textDecoration: 'none' }}
+              style={{ textDecoration: 'none', position: 'relative', display: 'block', borderRadius: '20px', overflow: 'hidden', border: '4px solid #4ECDC4' }}
             >
-              <div className="video-card" style={{ backgroundColor: '#52525b', border: '4px solid #4ECDC4', borderRadius: '20px', padding: '40px', textAlign: 'center', minHeight: '300px', display: 'block', visibility: 'visible', opacity: 1 }}>
-                <div style={{ backgroundColor: '#4ECDC4', width: '90px', height: '90px', borderRadius: '50%', margin: '0 auto 24px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <span style={{ fontSize: '45px', marginLeft: '5px' }}>▶️</span>
+              <div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%' }}>
+                <img 
+                  src="https://img.youtube.com/vi/ZoMIqd4m5-M/maxresdefault.jpg"
+                  alt="Mujer, Niña y Amiga"
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+                <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', backgroundColor: '#4ECDC4', width: '80px', height: '80px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <span style={{ fontSize: '40px', marginLeft: '5px' }}>▶️</span>
                 </div>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', marginBottom: '16px' }}>
-                  <span style={{ fontSize: '20px' }}>📺</span>
-                  <span style={{ fontSize: '14px', color: '#d4d4d8' }}>YouTube</span>
-                </div>
-                <h3 style={{ fontSize: '24px', fontWeight: 'bold', color: '#ffffff', marginBottom: '8px' }}>Mujer, Niña y Amiga</h3>
-                <p style={{ fontSize: '16px', color: '#a1a1aa' }}>Cuatro Menguantes</p>
+              </div>
+              <div style={{ backgroundColor: '#52525b', padding: '24px', textAlign: 'center' }}>
+                <h3 style={{ fontSize: '20px', fontWeight: 'bold', color: '#ffffff', marginBottom: '8px' }}>Mujer, Niña y Amiga</h3>
+                <p style={{ fontSize: '14px', color: '#a1a1aa' }}>Cuatro Menguantes</p>
               </div>
             </a>
           </div>
