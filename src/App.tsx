@@ -469,9 +469,13 @@ function App() {
                 href="https://www.instagram.com/cuatromenguantes/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-32 h-32 rounded-full bg-gradient-to-r from-[#E63946] to-[#ff4d5a] hover:shadow-2xl hover:shadow-[#E63946]/50 transition-all transform hover:scale-110"
+                className="inline-flex flex-col items-center justify-center gap-4 p-8 rounded-2xl bg-gradient-to-r from-[#E63946]/10 to-[#ff4d5a]/10 border-2 border-[#E63946] hover:border-[#ff4d5a] hover:shadow-2xl hover:shadow-[#E63946]/50 transition-all transform hover:scale-105"
               >
-                <span style={{ fontSize: '80px' }}>📱</span>
+                <span style={{ fontSize: '48px' }}>👆</span>
+                <p className="text-center">
+                  <span className="font-bold text-white block text-lg">HAZ CLICK</span>
+                  <span className="text-white/70">EN LA IMAGEN</span>
+                </p>
               </a>
               <p className="text-white/70 text-center">
                 <span className="font-bold text-white">@cuatromenguantes</span>
