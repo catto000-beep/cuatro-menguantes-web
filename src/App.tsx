@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import LogoAnimado from './LogoAnimado';
+import InstagramWidget from './InstagramWidget';
 
 function App() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -434,67 +435,12 @@ function App() {
               <div className="w-12 h-1 gradient-rojo rounded-full" />
             </div>
             
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-12">
               Instagram <span className="text-gradient-rojo">Cuatro Menguantes</span>
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-12 items-center max-w-5xl mx-auto">
-            {/* Foto de la banda - Enlace a Instagram */}
-            <div className="md:col-span-1">
-              <a 
-                href="https://www.instagram.com/cuatromenguantes/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block relative group"
-              >
-                <div className="absolute -inset-1 bg-gradient-to-r from-[#E63946] to-[#ff4d5a] rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200" />
-                <img 
-                  src="/images/galeria/058A5384 (1).jpg"
-                  alt="Cuatro Menguantes en Instagram"
-                  className="relative rounded-2xl w-full shadow-2xl group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-black/30 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <span style={{ fontSize: '60px' }}>📸</span>
-                </div>
-              </a>
-            </div>
-
-            {/* Instagram Logo - Enlace */}
-            <div className="md:col-span-1 flex flex-col items-center justify-center gap-6">
-              <div className="inline-flex flex-col items-center justify-center gap-4 p-8 rounded-2xl bg-gradient-to-r from-[#E63946]/10 to-[#ff4d5a]/10 border-2 border-[#E63946]">
-                <span style={{ fontSize: '48px' }}>👈</span>
-                <p className="text-center">
-                  <span className="font-bold text-white block text-lg">HAZ CLICK</span>
-                  <span className="text-white/70">EN LA IMAGEN</span>
-                </p>
-              </div>
-              <p className="text-white/70 text-center">
-                <span className="font-bold text-white">@cuatromenguantes</span>
-                <br />
-                Síguenos en Instagram
-              </p>
-            </div>
-
-            {/* QR Code */}
-            <div className="md:col-span-1 flex flex-col items-center justify-center gap-6">
-              <a 
-                href="https://www.instagram.com/cuatromenguantes/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block p-4 rounded-2xl bg-white"
-              >
-                <img 
-                  src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.instagram.com/cuatromenguantes/"
-                  alt="QR Code - Instagram Cuatro Menguantes"
-                  className="w-48 h-48"
-                />
-              </a>
-              <p className="text-white/70 text-center text-sm">
-                Escanea el código<br />para ir a Instagram
-              </p>
-            </div>
-          </div>
+          <InstagramWidget />
         </div>
       </section>
 
