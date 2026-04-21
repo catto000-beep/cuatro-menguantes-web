@@ -87,7 +87,7 @@ function App() {
         </div>
 
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-          <div className="hero-logo mb-8">
+          <div className="hero-logo mb-8" style={{ transform: 'scale(1.3)', transformOrigin: 'center' }}>
             <LogoAnimado />
           </div>
           
