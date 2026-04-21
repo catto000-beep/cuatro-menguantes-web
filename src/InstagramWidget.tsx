@@ -188,7 +188,7 @@ export default function InstagramWidget() {
 
       <div className="ig-card">
         <div className="ig-header">
-          <div className="avatar-ring" style={adminMode ? { cursor: 'pointer' } : {}} className={adminMode ? 'admin-mode' : ''}>
+          <div className={`avatar-ring${adminMode ? ' admin-mode' : ''}`} style={adminMode ? { cursor: 'pointer' } : {}}>
             <div className="avatar-inner">
               {avatar ? (
                 <img src={avatar} alt="avatar" />
