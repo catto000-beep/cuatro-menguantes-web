@@ -10,6 +10,7 @@ import {
   ExternalLink
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import LogoAnimado from './LogoAnimado';
 
 function App() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -87,11 +88,7 @@ function App() {
 
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
           <div className="hero-logo mb-8">
-            <img 
-              src="/images/logo.png" 
-              alt="Cuatro Menguantes" 
-              className="w-full max-w-2xl mx-auto"
-            />
+            <LogoAnimado />
           </div>
           
           <h1 className="hero-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
