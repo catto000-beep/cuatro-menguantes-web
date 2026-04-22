@@ -152,8 +152,7 @@ function App() {
                 <p>
                   Somos una banda de música argentina con orientación en el folclore. 
                   Con músicas propias y de otros autores contemporáneos, hemos participado 
-                  activamente en celebraciones populares a lo largo y ancho de la Argentina, 
-                  en fiestas patronales y eventos regionales.
+                  activamente en celebraciones populares a lo largo y ancho de la Argentina.
                 </p>
                 <p>
                   Nuestra propuesta combina <span className="text-[#FFD93D] font-semibold">tradición</span> y 
@@ -254,7 +253,7 @@ function App() {
                 <span style={{ fontSize: '40px' }}>🎵</span>
               </div>
               <h3 style={{ fontSize: '28px', fontWeight: 'bold', marginBottom: '16px', color: '#ffffff' }}>Zambas</h3>
-              <p style={{ color: '#e4e4e7', fontSize: '16px', lineHeight: '1.5' }}>El género más difundido y querido de la música argentina</p>
+              <p style={{ color: '#e4e4e7', fontSize: '16px', lineHeight: '1.5' }}>Sensualidad, pasión, desengaño</p>
             </div>
 
             <div className="repertorio-card" style={{ backgroundColor: '#52525b', border: '4px solid #FFD93D', borderRadius: '20px', padding: '40px', textAlign: 'center', minHeight: '280px', display: 'block', visibility: 'visible', opacity: 1 }}>
@@ -469,6 +468,9 @@ function App() {
             
             <p className="text-white/50 text-sm">
               © 2025 Cuatro Menguantes. Todos los derechos reservados.
+            </p>
+            <p className="text-white/50 text-sm mt-2">
+              Webmaster: <a href="https://www.instagram.com/catto000" target="_blank" rel="noopener noreferrer" className="text-[#4ECDC4] hover:text-[#E63946] transition-colors">catto000</a>
             </p>
           </div>
         </div>
